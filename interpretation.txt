@@ -1,0 +1,119 @@
+=============== Task 12 ===============
+
+<<<<< Compulsory Task 3 >>>>>
+
+>Monitoring Convergence
+>Create a text file called "interpretation.txt" and fill in your answers to the questions below.
+>Run k-means using 3 clusters on the 1953 and 2008 datasets separately.
+>What do you see? Take note of how the clusters change from 1953 to 2008. You will need to pay attention
+>not only to which countries are in clusters together, but also to the Life Expectancy and Birth Rates for those clusters. 
+
+This is the results from running k-means on the 1953 and 2008 data >>>>>
+
+Results for 1953:
+Number of countries in Cluster 1: 88
+Number of countries in Cluster 2: 60
+Number of countries in Cluster 3: 48
+
+The mean Life Expectancy in Cluster 1: 39.4179490909
+The mean Life Expectancy in Cluster 2: 55.3596333333
+The mean Life Expectancy in Cluster 3: 65.8907708333
+
+The mean Birth Rate in Cluster 1: 47.3681704545
+The mean Birth Rate in Cluster 2: 41.2236666667
+The mean Birth Rate in Cluster 3: 22.017625
+
+Results for 2008:
+Number of countries in Cluster 1: 91
+Number of countries in Cluster 2: 62
+Number of countries in Cluster 3: 43
+
+The mean Life Expectancy in Cluster 1: 76.5568241758
+The mean Life Expectancy in Cluster 2: 69.3874354839
+The mean Life Expectancy in Cluster 3: 52.8678604651
+
+The mean Birth Rate in Cluster 1: 13.047032967
+The mean Birth Rate in Cluster 2: 24.6376612903
+The mean Birth Rate in Cluster 3: 38.1495116279
+
+Comments on the results >>>>>
+
+The size of the clusters are very close for the two years. 1953: 88,60,48 and for 2008: 91,62,43.
+
+The same trend can be seen. That the higher the life expectancy then the birth rate is lower.
+
+In 1953 the cluster with the most countries also have the lowest mean life expectancy (39.4), but in 2008 the cluster with
+the most countries has the highest mean life expectancy (76.6)
+
+The life expectancy is higher in 2008 than in 1953, but the birth rate is lower in 2008 than in 1953. 
+No country moved to a worst cluster with respect to Life expectancy from 1953 to 2008. Countries either moved up or stayed 
+in the same cluster.
+
+The Maldives; United Arab Emirates; Turkey; China; Bahrain; Vietnam and Tunisia was the biggest movers from 1953 to 2008. 
+In 1953 these countries were in the cluster with the lowest Life expectancy and in 2008 they moved to the cluster with 
+the highest life expectancy.
+
+
+
+>Next, run the algorithm with 4 clusters on dataBoth.csv. Note any observations in your text file. 
+>Which countries are moving up clusters? 
+>How does "(2008)South Africa" compare to "(1953)United States"? 
+>Are there any 2008 countries that are in a cluster that is made up mostly of 1953 countries? Try and explain why. 
+>Are there any 1953 countries that are in a cluster that is made up of mostly 2008 countries? Try and explain why.
+
+This is the results from running k-means on the data in "dataBoth.csv" >>>>>
+
+Number of countries in Cluster 1: 88
+Number of countries in Cluster 2: 99
+Number of countries in Cluster 3: 108
+Number of countries in Cluster 4: 97
+
+The mean Life Expectancy in Cluster 1: 39.4040740909
+The mean Life Expectancy in Cluster 2: 66.6516161616
+The mean Life Expectancy in Cluster 3: 75.7113703704
+The mean Life Expectancy in Cluster 4: 54.1466804124
+
+The mean Birth Rate in Cluster 1: 47.3486363636
+The mean Birth Rate in Cluster 2: 24.7670707071
+The mean Birth Rate in Cluster 3: 13.8158796296
+The mean Birth Rate in Cluster 4: 40.6512783505
+
+Comments on the results >>>>>
+
+South Africa (2008) and United States (1953) are in the same cluster (Cluster 2). The US just cam out of the Second World
+War and was rebuilding itself. South Africa is also in a rebuilding phase after the end of Apartheid. 
+
+Afghanistan (2008) is in a cluster where all the other countries are 1953 countries. This is due to the fact that Afghanistan
+is a war torn country. During wartime the life expectancy is low, but after a war the birth rate goes up as can be seen that
+in 1953 the second world war ended and there was a boom in births.
+
+In Cluster 3 (Highest Life Expectancy) there is 10 countries from 1953, where the rest is from 2008. 
+(1953)Luxembourg; (1953)Norway; (1953)Austria; (1953)Belgium; (1953)Germany; (1953)Denmark; (1953)Sweden; 
+(1953)Switzerland; (1953)United Kingdom; (1953)Channel Islands
+
+These were prosperous countries by 1953 due to rapid reconstruction after the war. They just build on these in the following years.
+It is easier to build on existing foundations then to start from scratch.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
